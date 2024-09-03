@@ -11,9 +11,6 @@ export default defineConfig({
       fileName: "deerii-checkbox"
     },
     rollupOptions: {
-      input: {
-        index: path.resolve('index.html')
-      },
       external: ["vue"],
       output: {
         globals: {
