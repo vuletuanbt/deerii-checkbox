@@ -1,7 +1,7 @@
 {
   "name": "deerii-checkbox",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "repository": {
     "type": "git",
@@ -16,7 +16,10 @@
     "vue",
     "vuejs"
   ],
-  "files": ["dist", "src/components/"],
+  "files": [
+    "dist",
+    "src/components"
+  ],
   "main": "./dist/deerii-checkbox.umd.cjs",
   "module": "./dist/deerii-checkbox.js",
   "exports": {
