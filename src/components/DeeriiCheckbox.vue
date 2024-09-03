@@ -14,6 +14,7 @@
   </template>
   
   <script setup lang="ts">
+  import "~/style.css";
   import { ref, watch } from "vue";
   
   const props = withDefaults(
