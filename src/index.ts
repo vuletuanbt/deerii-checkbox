@@ -1,2 +1,3 @@
 import DeeriiCheckbox from "~/components/DeeriiCheckbox.vue";
-export { DeeriiCheckbox };
+import DeeriiInput from "~/components/DeeriiInput.vue";
+export { DeeriiCheckbox, DeeriiInput };

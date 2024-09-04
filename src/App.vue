@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import DeeriiCheckbox from '~/components/DeeriiCheckbox.vue'
+import DeeriiCheckbox from "~/components/DeeriiCheckbox.vue";
+import DeeriiInput from "~/components/DeeriiInput.vue";
 </script>
 
 <template>
-  <h1>Deerii Checkbox</h1>
+  <h1>DeerII</h1>
   <DeeriiCheckbox :model-value="true" />
+  <DeeriiInput :model-value="'Input Value'" :label="'Input'" />
 </template>
 
 <style scoped>

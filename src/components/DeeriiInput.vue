@@ -1,26 +1,25 @@
 <template>
   <label>
-    <input
-      type="checkbox"
-      :disabled="disabled"
-      :indeterminate="val === null"
-      :checked="val === true"
-      @click="change"
-    />
     <span>
       {{ label }}
     </span>
+    <input
+      type="text"
+      :value="val"
+      :disabled="disabled"
+      :indeterminate="val === null"
+      @click="change"
+    />
   </label>
 </template>
 
 <script setup lang="ts">
-import "~/style.css";
 import { ref, watch } from "vue";
 
 const props = withDefaults(
   defineProps<{
     label?: string;
-    modelValue: boolean | null;
+    modelValue: string | null;
     disabled?: boolean;
     color?: string;
   }>(),
@@ -30,20 +29,23 @@ const props = withDefaults(
 );
 
 const emit = defineEmits<{
-  (e: "update:modelValue", value: boolean | null): void;
+  (e: "update:modelValue", value: string | null): void;
 }>();
 
-const val = ref<boolean | null>(false);
+const val = ref<string | null>(null);
 
 const change = () => {
-  if (val.value === false) val.value = null;
-  else if (val.value === null) val.value = true;
-  else val.value = false;
   emit("update:modelValue", val.value);
 };
 
+console.log("val", val.value);
+console.log(props.modelValue);
+
 watch(
   () => props.modelValue,
-  (value) => (val.value = value)
+  (value) => {
+    console.log("watch:value", value);
+    val.value = value;
+  }
 );
 </script>
