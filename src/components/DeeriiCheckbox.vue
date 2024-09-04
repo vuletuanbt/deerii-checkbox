@@ -2,9 +2,9 @@
   <label>
     <input
       type="checkbox"
+      :checked="val === true"
       :disabled="disabled"
       :indeterminate="val === null"
-      :checked="val === true"
       @click="change"
     />
     <span>
@@ -14,14 +14,14 @@
 </template>
 
 <script setup lang="ts">
-import "~/style.css";
 import { ref, watch } from "vue";
+import "~/style.css";
 
 const props = withDefaults(
   defineProps<{
-    label?: string;
     modelValue: boolean | null;
     disabled?: boolean;
+    label?: string;
     color?: string;
   }>(),
   {

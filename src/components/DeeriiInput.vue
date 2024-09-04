@@ -18,8 +18,8 @@ import { ref, watch } from "vue";
 
 const props = withDefaults(
   defineProps<{
-    label?: string;
     modelValue: string | null;
+    label?: string;
     disabled?: boolean;
     color?: string;
   }>(),
