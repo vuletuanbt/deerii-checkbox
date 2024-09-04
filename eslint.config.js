@@ -9,7 +9,7 @@ export default ts.config(
   ...ts.configs.recommended,
   ...eslintPluginVue.configs['flat/recommended'],
   {
-    ignores: ['node_modules', 'dist', 'public', '.nuxt'],
+    ignores: ['node_modules', 'dist'],
   },
   {
     files: ['*.vue', '**/*.vue'],
@@ -18,5 +18,8 @@ export default ts.config(
         parser: '@typescript-eslint/parser',
       },
     },
+    rules: {
+      'vue/html-self-closing': 'off',
+    }
   },
 )
