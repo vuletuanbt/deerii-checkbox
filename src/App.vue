@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import DeeriiCheckbox from "~/components/DeeriiCheckbox.vue";
-import DeeriiInput from "~/components/DeeriiInput.vue";
+import DeeriiCheckbox from '~/components/DeeriiCheckbox.vue'
+import DeeriiInput from '~/components/DeeriiInput.vue'
 </script>
 
 <template>

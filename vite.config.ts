@@ -1,27 +1,27 @@
-import vue from "@vitejs/plugin-vue";
-import * as path from "path";
-import { defineConfig } from "vite";
-import dts from "vite-plugin-dts";
+import vue from '@vitejs/plugin-vue'
+import * as path from 'path'
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 export default defineConfig({
   plugins: [vue(), dts()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
-      name: "DeeriiCheckbox",
-      fileName: "deerii-checkbox"
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'DeeriiCheckbox',
+      fileName: 'deerii-checkbox',
     },
     rollupOptions: {
-      external: ["vue"],
+      external: ['vue'],
       output: {
         globals: {
-          vue: "Vue"
-        }
-      }
-    }
+          vue: 'Vue',
+        },
+      },
+    },
   },
   resolve: {
     alias: {
-      "~": path.resolve(__dirname, "src")
-    }
-  }
-});
+      '~': path.resolve(__dirname, 'src'),
+    },
+  },
+})

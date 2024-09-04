@@ -3,20 +3,17 @@
     /* Essential */
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "strict": true,
-
     /* Important */
     "composite": true,
-    "lib": ["ES2023"],
+    "lib": ["ESNext"],
     "isolatedModules": true,
     "moduleDetection": "force",
-
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
     /* Other */
     "skipLibCheck": true
   },

@@ -1,26 +1,22 @@
 {
   "compilerOptions": {
     /* Essential */
-    "target": "ES2020",
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "strict": true,
-
     /* Important */
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "isolatedModules": true,
     "moduleDetection": "force",
     "jsx": "preserve",
-
     /* Bundler mode */
     "allowImportingTsExtensions": true,
     "noEmit": true,
-
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-
     /* Other */
     "useDefineForClassFields": true,
     "skipLibCheck": true
