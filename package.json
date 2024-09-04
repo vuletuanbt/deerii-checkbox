@@ -1,16 +1,21 @@
 {
   "name": "@deerii/component",
-  "version": "0.3.0",
+  "version": "0.7.1",
   "private": false,
   "type": "module",
-  "main": "./dist/deerii-component.umd.cjs",
-  "module": "./dist/deerii-component.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/component.cjs",
+  "module": "./dist/component.js",
+  "types": "./dist/components/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/deerii-component.js",
-      "require": "./dist/deerii-component.umd.cjs"
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/component.js",
+      "require": "./dist/component.cjs"
+    },
+    "./helper": {
+      "types": "./dist/helpers/index.d.ts",
+      "import": "./dist/helper.js",
+      "require": "./dist/helper.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",

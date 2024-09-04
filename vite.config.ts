@@ -6,9 +6,10 @@ export default defineConfig({
   plugins: [vue(), dts()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'DeeriiComponent',
-      fileName: 'deerii-component',
+      entry: {
+        component: path.resolve(__dirname, 'src/components/index.ts'),
+        helper: path.resolve(__dirname, 'src/helpers/index.ts'),
+      },
     },
     rollupOptions: {
       external: ['vue'],
