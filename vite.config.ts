@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'DeeriiCheckbox',
-      fileName: 'deerii-checkbox',
+      name: 'DeeriiComponent',
+      fileName: 'deerii-component',
     },
     rollupOptions: {
       external: ['vue'],

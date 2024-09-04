@@ -1,16 +1,16 @@
 {
-  "name": "deerii-checkbox",
-  "version": "0.4.0",
+  "name": "@deerii/component",
+  "version": "0.3.0",
   "private": false,
   "type": "module",
-  "main": "./dist/deerii-checkbox.umd.cjs",
-  "module": "./dist/deerii-checkbox.js",
+  "main": "./dist/deerii-component.umd.cjs",
+  "module": "./dist/deerii-component.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/deerii-checkbox.js",
-      "require": "./dist/deerii-checkbox.umd.cjs"
+      "import": "./dist/deerii-component.js",
+      "require": "./dist/deerii-component.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
@@ -54,11 +54,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuletuanbt/deerii-checkbox.git"
+    "url": "git+https://github.com/vuletuanbt/deerii-component.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
-    "checkbox",
-    "deerii-checkbox",
+    "component",
+    "deerii",
     "material",
     "material-ui",
     "vue3",
