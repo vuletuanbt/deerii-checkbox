@@ -26,6 +26,7 @@ const props = withDefaults(
   }>(),
   {
     color: '#2f4fef',
+    label: 'Checkbox',
   },
 )
 
