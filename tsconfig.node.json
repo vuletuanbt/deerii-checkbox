@@ -1,21 +1,24 @@
 {
   "compilerOptions": {
-    "composite": true,
+    /* Essential */
     "target": "ESNext",
-    "lib": ["ES2023"],
     "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
     "moduleResolution": "bundler",
+    "strict": true,
+
+    /* Important */
+    "composite": true,
+    "lib": ["ES2023"],
     "isolatedModules": true,
     "moduleDetection": "force",
 
     /* Linting */
-    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Other */
+    "skipLibCheck": true
   },
   "include": ["vite.config.ts"]
 }
